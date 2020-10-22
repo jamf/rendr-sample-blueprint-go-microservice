@@ -1,0 +1,26 @@
+name: go-microservice
+version: 1
+author: Brian S. <brian.stewart@jamf.com>, Tomasz K. <tomasz.kurcz@jamf.com>
+description: A Go microservice template
+values:
+- name: name
+  description: The name of your microservice
+  required: true
+- name: golang_version
+  description: The version of Golang to use
+  default: 1.14
+- name: port
+  description: Specify the port the HTTP server will be exposed under
+  required: true
+- name: github_create_repo
+  description: 'Create GitHub repository (true/false)'
+  required: true
+- name: github_id
+  description: GitHub organization or username
+  required: true
+- name: github_repo_visbility
+  description: 'GitHub repo visbility (options: public, private)'
+  default: private
+- name: docker_image_repo
+  description: Docker image repository
+  required: true

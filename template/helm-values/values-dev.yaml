@@ -1,0 +1,5 @@
+ingress:
+  hosts:
+  - host: {{ name }}.dev.example.com
+    paths:
+    - /

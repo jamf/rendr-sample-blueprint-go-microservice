@@ -1,0 +1,18 @@
+image:
+  repository: {{ docker_image_repo }}
+  tag: latest
+  pullPolicy: Always
+
+ingress:
+  enabled: true
+
+serviceAccount:
+  create: false
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 64Mi
+  limits:
+    cpu: 1
+    memory: 128Mi
